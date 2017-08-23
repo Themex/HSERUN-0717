@@ -1,11 +1,4 @@
 <?php
-
-/**
- * Created by PhpStorm.
- * User: Theme
- * Date: 16.07.2017
- * Time: 10:17
- */
 if(!defined('INCLUDE_SECURE')) die('Access denied');
 class SessionManager
 {
