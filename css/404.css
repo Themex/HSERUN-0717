@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+@font-face {
+    font-family: 'BebasRegular';
+    src: url('https://hserun.ru/online-quest/css/fonts/BebasNeueRegular.otf');
+}
+button, input, textarea {
+  outline: none !important;
+}
+        html, body {
+            width: 100%;
+            height: 100%;
+            background: #000000;
+            margin: 0;
+            padding: 0;
+        }
+        .parent {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            overflow: auto;
+            position: absolute;
+            z-index: 100;
+            text-align: center;
+        }
+        .nftext {
+            font-family: 'BebasRegular';
+            font-size: 40px;
+            color: #FFFFFF;
+        }
+        .back-button {
+    background: none;
+    border: 1px solid #FFFFFF;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-appearance: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 10px;
+}
+.back-button:hover {
+    box-shadow: 0 0 10px #4168AF;
+    border: 1px solid #4168AF;
+}
+
+/*КНОПКА ТЕСТИРОВАНИЯ САЙТА*/
+            .test-button-block {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 100001;
+            }
+            .test-button {
+                border: 0;
+                -webkit-appearance: none;
+                cursor: pointer;
+                background: #FF3B3F;
+                color: #FFFFFF;
+                border-radius: 20px;
+                padding: 5px 10px;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 17px;
+                transition: 0.5s;
+            }
+            .test-button:hover {
+                background: red;
+            }

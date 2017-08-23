@@ -1,0 +1,276 @@
+@font-face {
+    font-family: 'BebasThin';
+    src: url('https://hserun.ru/online-quest/css/fonts/BebasNeueThin.otf');
+}
+@font-face {
+    font-family: 'BebasLight';
+    src: url('https://hserun.ru/online-quest/css/fonts/BebasNeueLight.otf');
+}
+@font-face {
+    font-family: 'BebasRegular';
+    src: url('https://hserun.ru/online-quest/css/fonts/BebasNeueRegular.otf');
+}
+@font-face {
+    font-family: 'BebasBook';
+    src: url('https://hserun.ru/online-quest/css/fonts/BebasNeueBook.otf');
+}
+@font-face {
+    font-family: 'BebasBold';
+    src: url('https://hserun.ru/online-quest/css/fonts/BebasNeueBold.otf');
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+html, body {
+    margin: 0;
+    padding: 0;
+}
+button, input, textarea {
+  outline: none !important;
+}
+.instruction {
+    display: none;
+    width: 400px;
+    height: 500px;
+    color: #E6E6E6;
+    border: 0; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 0 0 7px 7px;
+    font-family: 'Open Sans', sans-serif;
+}
+.instruction-inner {
+    padding: 10px;
+}
+.parent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    overflow: auto;   
+}
+.bg0 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1001;
+    background: #000000;
+}
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    background: url('https://hserun.ru/online-quest/img/bg3.jpg');
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+.bg2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    background: url('https://hserun.ru/online-quest/img/bg3wb.jpg');
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+.content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1001;
+}
+.img-logo {
+    width: 300px;
+}
+.online-img {
+    width: 300px;
+}
+.title {
+    font-family: 'BebasRegular';
+    font-size: 80px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.enter-button {
+    background: none;
+    border: 2px solid #FFFFFF;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-appearance: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.enter-button:hover {
+    box-shadow: 0 0 10px #4168AF;
+    border: 2px solid #4168AF;
+}
+.tt {
+    text-decoration: none;
+    font-size: 15px;
+    border: 1px solid #66CDAA;
+}
+.tt:hover {
+    border: 1px solid blue;
+}
+#content-logo {
+    display: none;
+}
+#content-name {
+    display: none;
+}
+#content-enter-button {
+    display: none;
+}
+
+#content-vk-auth {
+    text-align: center;
+    font-family: 'BebasLight';
+    font-size: 50px;
+    color: #FFFFFF;
+    display: none;
+}
+.info-heading {
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: 'BebasLight';
+    font-size: 40px;
+    color: #FFFFFF;
+}
+#info-block2 {
+    display: none;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #E6E6E6;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.info-block2-inner {
+    padding: 20px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+}
+.mini {
+    font-size: 15px;
+    border: 1px solid #FFFFFF;
+}
+.mini:hover {
+    border: 1px solid #66CDAA;
+    color: #CCCCCC;
+}
+.vkmini {
+    font-size: 15px;
+    border: 1px solid #4168AF;
+}
+.vkmini:hover {
+    border: 1px solid #4168AF;
+    box-shadow: 0 0 15px rgba(65, 104, 175, 0.5);
+    color: #CCCCCC;
+}
+.info-header {
+    font-size: 18px;
+    margin: 20px 0 10px 0;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 1050px) {
+.instruction {
+    width: 80%;
+    height: 80%;
+}
+.enter-button:hover {
+    box-shadow: 0;
+    border: 4px solid #4168AF;
+}
+.vkmini:hover {
+    border: 3px solid #4168AF;
+    box-shadow: 0;
+    color: #CCCCCC;
+}
+#info-block {
+    width: 80%;
+}
+.info-block2-inner {
+    padding-bottom: 10px;
+}
+.mm {
+    margin-bottom: 20px;
+}
+}
+
+/*КНОПКА ТЕСТИРОВАНИЯ САЙТА*/
+            .test-button-block {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 100001;
+            }
+            .test-button {
+                border: 0;
+                -webkit-appearance: none;
+                cursor: pointer;
+                background: #FF3B3F;
+                color: #FFFFFF;
+                border-radius: 20px;
+                padding: 5px 10px;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 17px;
+                transition: 0.5s;
+            }
+            .test-button:hover {
+                background: red;
+            }
+            .instruction-block {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+::-webkit-scrollbar-button {
+background-image:url('');
+background-repeat:no-repeat;
+width:5px;
+height:0;
+cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+background-color: rgba(255,255,255,0.2);
+position: absolute;
+}
+
+::-webkit-scrollbar-thumb {
+-webkit-border-radius: 0px;
+border-radius: 0px;
+background-color: rgba(255,255,255,0.3);
+}
+
+::-webkit-scrollbar-thumb:hover{
+background-color:#FF3B3F;
+}
+
+::-webkit-resizer{
+background-image:url('');
+background-repeat:no-repeat;
+width:5px;
+height:0px
+}
+
+::-webkit-scrollbar{
+width: 5px;
+}
